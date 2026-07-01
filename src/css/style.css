@@ -1,0 +1,143 @@
+:root {
+  /* =========================
+     COLORS - SURFACES
+  ========================= */
+  --surface: #051424;
+  --surface-dim: #051424;
+  --surface-bright: #2c3a4c;
+
+  --surface-container-lowest: #010f1f;
+  --surface-container-low: #0d1c2d;
+  --surface-container: #122131;
+  --surface-container-high: #1c2b3c;
+  --surface-container-highest: #273647;
+
+  --background: #051424;
+  --on-background: #d4e4fa;
+
+  --surface-variant: #273647;
+  --on-surface: #d4e4fa;
+  --on-surface-variant: #c4c5d9;
+
+  --inverse-surface: #d4e4fa;
+  --inverse-on-surface: #233143;
+
+  --outline: #8e90a2;
+  --outline-variant: #434656;
+
+  --surface-tint: #b8c3ff;
+
+  /* =========================
+     COLORS - PRIMARY
+  ========================= */
+  --primary: #b8c3ff;
+  --on-primary: #002388;
+  --primary-container: #2e5bff;
+  --on-primary-container: #efefff;
+  --inverse-primary: #124af0;
+
+  /* =========================
+     COLORS - SECONDARY (Tactical Red)
+  ========================= */
+  --secondary: #ffb3b2;
+  --on-secondary: #680013;
+  --secondary-container: #b60129;
+  --on-secondary-container: #ffc2c1;
+
+  /* =========================
+     COLORS - TERTIARY
+  ========================= */
+  --tertiary: #bec6e0;
+  --on-tertiary: #283044;
+  --tertiary-container: #656d84;
+  --on-tertiary-container: #eef0ff;
+
+  /* =========================
+     COLORS - ERROR
+  ========================= */
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-container: #ffdad6;
+
+  /* =========================
+     FIXED COLORS
+  ========================= */
+  --primary-fixed: #dde1ff;
+  --primary-fixed-dim: #b8c3ff;
+  --on-primary-fixed: #001356;
+  --on-primary-fixed-variant: #0035be;
+
+  --secondary-fixed: #ffdad9;
+  --secondary-fixed-dim: #ffb3b2;
+  --on-secondary-fixed: #410008;
+  --on-secondary-fixed-variant: #92001f;
+
+  --tertiary-fixed: #dae2fd;
+  --tertiary-fixed-dim: #bec6e0;
+  --on-tertiary-fixed: #131b2e;
+  --on-tertiary-fixed-variant: #3f465c;
+
+  /* =========================
+     TYPOGRAPHY
+  ========================= */
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --headline-lg: 48px;
+  --headline-lg-mobile: 32px;
+  --headline-md: 24px;
+
+  --body-lg: 18px;
+  --body-md: 16px;
+
+  --label-md: 14px;
+  --label-sm: 12px;
+
+  /* =========================
+     FONT WEIGHTS
+  ========================= */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* =========================
+     LINE HEIGHTS
+  ========================= */
+  --lh-tight: 1.1;
+  --lh-md: 1.3;
+  --lh-normal: 1.5;
+  --lh-loose: 1.6;
+
+  /* =========================
+     LETTER SPACING
+  ========================= */
+  --ls-sm: 0.05em;
+  --ls-md: 0.1em;
+  --ls-neg: -0.02em;
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* =========================
+     SPACING (4px system)
+  ========================= */
+  --space-base: 4px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  --gutter: 20px;
+  --margin-mobile: 16px;
+  --margin-desktop: 40px;
+}
