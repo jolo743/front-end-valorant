@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant-API</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="../../index.html" class="nav-logo">Inicio</a>
+
+            <ul class="nav-links">
+                <li><a href="./documentation.html" class="nav-link">Documentación</a></li>
+                <li><a href="./endpoints.html" class="nav-link">Endpoints</a></li>
+                <li><a href="./api.html" class="nav-link">API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="api-page">
+        <section class="api-section">
+            <h3>Todos los Personajes</h3>
+            <div id="characters"></div>
+        </section>
+
+        <section class="api-section crud">
+
+            <h3>Crear Personajes</h3>
+
+            <input id="name" placeholder="Name">
+            <input id="role" placeholder="Role">
+            <input id="img" placeholder="Image URL">
+            <input id="description" placeholder="Description">
+            <input id="abilities" placeholder="Abilities">
+
+            <button onclick="createCharacter()">Create</button>
+        </section>
+
+        <section class="api-section">
+            <h3>Buscar por ID</h3>
+
+            <input id="searchId" placeholder="ID">
+            <button onclick="getCharacterById()">Search</button>
+
+            <div id="singleCharacter"></div>
+        </section>
+
+        <section class="api-section">
+            <h3>Actualizar Personaje</h3>
+
+            <input id="updateId" placeholder="Character ID">
+            <button onclick="loadCharacterForEdit()">Load</button>
+
+            <br><br>
+
+            <input id="update-name" placeholder="Name">
+            <input id="update-role" placeholder="Role">
+            <input id="update-img" placeholder="Image URL">
+            <input id="update-description" placeholder="Description">
+            <input id="update-abilities" placeholder="Abilities">
+
+            <button onclick="updateCharacter()">Update</button>
+        </section>
+
+        <section class="api-section">
+            <h3>Eliminar Personaje</h3>
+            <input id="deleteId" placeholder="ID">
+            <button onclick="deleteByInput()">Delete</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h3 class="footer-logo">VALORANT-API</h3>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

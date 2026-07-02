@@ -1,84 +1,92 @@
-/* ================================
+/* ==================================================
    NAVBAR — shared across all pages
-*/
+   ================================================== */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: #0b1326;
-  border-bottom: 2px solid var(--color-secondary-container);
+  background-color: var(--surface-container-lowest);
+  border-bottom: 1px solid var(--outline-variant);
   box-shadow: var(--glow-cyan);
 }
 
 .site-nav {
-  width: 100%;
-  padding: 18px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#parejas,
-#ppt,
-#ruleta,
-#trileros,
-#nosotros {
-  scroll-margin-top: 100px;
-}
-
-html {
-  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--margin-mobile);
+  gap: var(--space-md);
 }
 
 /* LOGO */
-
 .nav-logo {
-  font-family: "Rubik", sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--color-primary);
+  font-family: var(--font-headline);
+  font-size: var(--headline-md);
+  font-weight: var(--weight-bold);
+  color: var(--primary);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--ls-sm);
+  text-shadow: var(--neon-text-glow);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-logo:hover {
+  color: var(--primary-container);
 }
 
 /* LINKS */
-
 .nav-links {
   display: flex;
-  gap: 45px;
+  gap: var(--space-lg);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-link {
-  color: var(--color-on-surface);
+  font-family: var(--font-headline);
+  font-size: var(--label-md);
+  font-weight: var(--weight-medium);
+  color: var(--on-surface);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 700;
   text-transform: uppercase;
-  transition: 0.3s;
+  letter-spacing: var(--ls-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  transition: color 0.2s ease, text-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: var(--color-secondary);
+  color: var(--primary);
   text-shadow: var(--glow-cyan);
+  background-color: var(--surface-container);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
   .site-nav {
     flex-direction: column;
     gap: var(--space-sm);
-    padding: var(--space-sm) var(--container-gutter);
+    padding: var(--space-sm) var(--margin-mobile);
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--space-xs);
+  }
+
+  .nav-link {
+    font-size: var(--label-sm);
   }
 }

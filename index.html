@@ -4,32 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valorant-API</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="site-nav">
-            <a href="" class="nav-logo">Inicio</a>
+            <a href="#inicio" class="nav-logo">Inicio</a>
 
             <ul class="nav-links">
-                <li><a href="" class="nav-link">Documentación</a></li>
-                <li><a href="" class="nav-link">Endpoints</a></li>
-                <li><a href="" class="nav-link">API</a></li>
-
+                <li><a href="src/pages/documentation.html" class="nav-link">Documentación</a></li>
+                <li><a href="src/pages/endpoints.html" class="nav-link">Endpoints</a></li>
+                <li><a href="src/pages/api.html" class="nav-link">API</a></li>
             </ul>
         </nav>
     </header>
-    <aside>
-        <h4>Propósito de la API</h4>
-    </aside>
-    <main>
-        <section>
-            <h1>Bienvenido a la API de Valorant</h1>
-            <p>Esta API permite acceder a información sobre los personajes. Como su nombre, el rol y habilidades.</p>
+
+    <main class="site-main">
+        <section id="inicio" class="hero">
+            <h1 class="hero-title">Bienvenido a la API de Valorant</h1>
+            <p class="hero-description">Esta API de Valorant tiene como objetivo gestionar información de los agentes del videojuego, 
+                permitiendo crear, consultar, actualizar y eliminar personajes desde una base de datos. 
+                Cada personaje contiene información como su nombre, rol, imagen, descripción y habilidades.
+            </p>
         </section>
     </main>
+
     <footer class="site-footer">
-        <h3 class="footer-logo">VLORANT-API</h3>
+        <h3 class="footer-logo">VALORANT-API</h3>
     </footer>
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>

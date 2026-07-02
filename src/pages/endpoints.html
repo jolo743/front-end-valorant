@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant-API</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="#inicio" class="nav-logo">Inicio</a>
+
+            <ul class="nav-links">
+                <li><a href="" class="nav-link">Documentación</a></li>
+                <li><a href="" class="nav-link">Endpoints</a></li>
+                <li><a href="src/pages/api.html" class="nav-link">API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section id="inicio" class="hero">
+            <h1 class="hero-title">Endpoints Disponibles</h1>
+            <h2>Obtener todos los personajes</h2>
+            <p>GET /characters/</p>
+            <h4>Parámetro de salida</h4>
+            <p>
+                <p>[</p>
+                    <p>{</p>
+                        <p>"id": 1,</p>
+                        <p>"name": "Jett",</p>
+                        <p>"role": "Duelist",</p>
+                        <p>"img": "https://...",</p>
+                        <p>"description": "Agente ágil",</p>
+                        <p>"abilities": "Dash, Smoke"</p>
+                    }</p>
+                ]</p>
+            </p>
+
+            <h2>Obtener personaje por ID</h2>
+            <p>GET /characters/{id}</p>
+
+            <h2>Crear personaje</h2>
+            <p>POST /characters/</p>
+            <h4>Parámetro de entrada</h4>
+            <p>
+                <p>{</p>
+                    <p>"id": </p>
+                    <p>"name": </p>
+                    <p>"role": </p>
+                    <p>"img": </p>
+                    <p>"description": </p>
+                    <p>"abilities": </p>
+                <p>}</p>
+            </p>
+
+            <h2>Actualizar personaje</h2>
+            <p>PUT /characters/{id}</p>
+            <h4>Parámetro de entrada</h4>
+            <p>
+                "id": x,
+            </p>
+            <h4>Parámetro de salida</h4>
+            <p>
+                <p>{</p>
+                    <p>"id": 2,</p>
+                    <p>"name": "Reyna",</p>
+                    <p>"role": "Duelist",</p>
+                    <p>"img": "https://...",</p>
+                    <p>"description": "Agente centrada en el combate",</p>
+                    <p>"abilities": "Heal, Flash"</p>
+                <p>}</p>
+            </p>
+
+            <h2>Eliminar personaje</h2>
+            <p>DELETE /characters/{id}</p>
+
+            <h4>Parámetro de salida</h4>
+            <p>
+                <p>{</p>
+                    <p>"message": "Character deleted successfully"</p>
+                <p>}</p>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h3 class="footer-logo">VALORANT-API</h3>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
